@@ -43,7 +43,8 @@
 
 1. `Создал машину с Zabbix сервером и установил Zabbix-agent2 на оба сервера, установил подключение их друг к другу.`
 
-![Link](hhttps://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/МОНИТОРИНГ/Zabbix-hosts.jpg)
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/МОНИТОРИНГ/Zabbix-hosts.jpg)
+
 
 2. `Настроил темплейты к группе серверов и настроил дашборды.`
 
