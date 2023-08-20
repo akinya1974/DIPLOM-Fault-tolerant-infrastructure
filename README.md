@@ -103,7 +103,7 @@
 
 1. `Создал snapshot дисков всех ВМ. Ограничил время жизни snaphot в неделю. Сами snaphot настроил на ежедневное копирование.`
 
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ДИСКИ/Снимки%20дисков.jpg)
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ДИСКИ/Снимки%20дисков-new.jpg)
 
 
 ![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ДИСКИ/Расписание%20снимков%20дисков.jpg)
