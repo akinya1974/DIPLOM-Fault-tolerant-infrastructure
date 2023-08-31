@@ -1,4 +1,4 @@
-# DIPLOM-Fault-tolerant-infrastructure
+# Отказоустойчивый сайт с балансировкой нагрузки с помощью Yandex Application Load Balancer Акиньшин С.Г.
 
 
 SERVER1  158.160.79.157
