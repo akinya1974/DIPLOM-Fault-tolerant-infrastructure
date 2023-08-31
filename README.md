@@ -307,7 +307,7 @@ resource "yandex_dns_recordset" "rs-2" {
 
 ![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/HTML%20-%20Сервер-1.jpg)
 
-[Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/HTML%20-%20Сервер-2.jpg)
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/HTML%20-%20Сервер-2.jpg)
 
 
 
