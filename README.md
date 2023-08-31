@@ -1,127 +1,16 @@
 # DIPLOM-Fault-tolerant-infrastructure
 
 
-SERVER1  http://158.160.28.27
+SERVER1  158.160.79.157
 
-SERVER2  http://158.160.106.254
+SERVER2  158.160.39.253
 
-ZABBIX   http://158.160.11.222
+ZABBIX   51.250.24.151:8080
 
-KIBANA   http://84.252.136.192
-## Сайт
+KIBANA   84.201.140.150:5601
 
-1. `Создал две машины.`
 
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.1%20Создал%20две%20машины.jpg)
-
-2. `Создал сервер-1.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.2%20Создал%20сервер-1.jpg)
-
-
-3. `Создал сервер-2.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.3%20Создал%20сервер-2.jpg)
-
-4. `Создал целевую группу.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.4%20Создал%20целевую%20группу.jpg)
-
-5. `Создал группу бэкендов.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.5%20Создал%20%20группу%20бэкендов.jpg)
-
-6. `Создал роутер.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.6%20Создал%20%20роутер.jpg)
-
-7. `Создал балансировщик.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.7%20Создал%20%20балансировщик.jpg)
-
-8. `Протестировал сайт.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/САЙТ/1.8%20Протестировал%20Сайт.jpg)
-
-
-
-## Мониторинг
-
-
-1. `Создал машину с Zabbix сервером и установил Zabbix-agent2 на оба сервера, установил подключение их друг к другу.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/МОНИТОРИНГ/Zabbix-hosts.jpg)
-
-
-2. `Настроил темплейты к группе серверов и настроил дашборды.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/МОНИТОРИНГ/2.1%20Создал%20мониторинг%20Zabbix.jpg)
-
-
-## Логи
-
-
-1. `Создал машину с Elastic и Kibana, установил filebeat на все сервера, сконфигурировал подключение их друг к другу и отправку логов Nginx.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ЛОГИ/ELASTIK-KIBANA.jpg)
-
-
-## Сеть
-
-1. `Создал публичную и приватную сеть, группы безопасности, настроил правила, подключил машины к данным группам.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Группа-публичная.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Группа-приват.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Группы%20безопасности.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Балансировщик.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Сервер1.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Сервер2.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Сервера%20elastic_kibana.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Сервера%20zabbix.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/СЕТЬ/Сети.jpg)
-
-
-2. `Создать bastion host к сожалению не получилось, поскольку по инструкции на шаге создания виртуальной машины, необходимо было к ней добавить две сети, внешнюю и внутреннюю, однако при ее создании яндекс не дал создать вторую сеть, такой кнопки, как было указано в инструкции вообще не было, наверное в связи с ограничениями и квотами!!! Скрины прилагаются)`
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/Создание%20бастиооной%20машины%20инструкция.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/Создание%20бастиооной%20машины.jpg)
-
-
-## Резервное копирование
-
-1. `Создал snapshot дисков всех ВМ. Ограничил время жизни snaphot в неделю. Сами snaphot настроил на ежедневное копирование.`
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ДИСКИ/Снимки%20дисков-new.jpg)
-
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ДИСКИ/Расписание%20снимков%20дисков.jpg)
-
-
-## Остаток
-
-![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ОСТАТОК.jpg)
-
-
-## Terraform file (Пример)
+## Создал Отказоустойчивый сайт с балансировкой нагрузки с помощью Yandex Application Load Balancer с помощью Terraform.
 
 ```
 terraform {
@@ -135,11 +24,14 @@ terraform {
 
 provider "yandex" {
   zone = "ru-central1-a"
+  token     = "ТОКЕН"
+  cloud_id  = "ОБЛАКО"
+  folder_id = "КАТАЛОГ"
 }
 
 variable "folder_id" {
   description = "ID of the folder where resources will be created"
-  default     = "<folder_ID>"
+  default     = "b1gmeg5vmo6n447ft4nn"
 }
 
 resource "yandex_iam_service_account" "ig-sa" {
@@ -262,7 +154,7 @@ resource "yandex_compute_instance_group" "alb-vm-group" {
     }
 
     metadata = {
-      user-data = "#cloud-config\nusers:\n  - name: <username>\n    groups: sudo\n    shell: /bin/bash\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    ssh-authorized-keys:\n      - ${file("<path_to_the_public_SSH_key>")}"
+      user-data = "#cloud-config\nusers:\n  - name: akinya\n    groups: sudo\n    shell: /bin/bash\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    ssh-authorized-keys: ssh-key
     }
   }
 
@@ -384,3 +276,87 @@ resource "yandex_dns_recordset" "rs-2" {
   data    = ["alb-example.com"]
 }
 ```
+## Сайт
+
+1. `Сервер-1.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Сервер-1.jpg)
+
+
+2. `Создал сервер-2.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Сервер-2.jpg)
+
+3. `целевая группа.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Целевая%20группа.jpg)
+
+4. `группа бэкендов.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Группа%20бекендов.jpg)
+
+5. `роутер.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Роутер.jpg)
+
+6. `балансировщик.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Балансировщик.jpg)
+
+7. `сайт.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/HTML%20-%20Сервер-1.jpg)
+
+[Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/HTML%20-%20Сервер-2.jpg)
+
+
+
+## Мониторинг
+
+
+1. `Создал машину с Zabbix сервером и установил Zabbix-agent2 на оба сервера, установил подключение их друг к другу.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/МОНИТОРИНГ/Zabbix-hosts.jpg)
+
+
+2. `Настроил темплейты к группе серверов и настроил дашборды.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Zabbix%20dashbord.jpg)
+
+
+## Логи
+
+
+1. `Создал машину с Elastic и Kibana, установил filebeat на все сервера, сконфигурировал подключение их друг к другу и отправку логов Nginx.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Эластик.jpg)
+
+
+## Сеть, Группы безопасности.
+
+1. `Создавалась Terraform.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Привило%20машыны%20NEW.jpg)
+
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/NEW/Привило%20балансировщик.jpgg)
+
+
+2. `Создать bastion host к сожалению не получилось, поскольку по инструкции на шаге создания виртуальной машины, необходимо было к ней добавить две сети, внешнюю и внутреннюю, однако при ее создании яндекс не дал создать вторую сеть, такой кнопки, как было указано в инструкции вообще не было, наверное в связи с ограничениями и квотами!!! Скрины прилагаются)`
+
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/Создание%20бастиооной%20машины%20инструкция.jpg)
+
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/Создание%20бастиооной%20машины.jpg)
+
+
+## Резервное копирование
+
+1. `Создал snapshot дисков всех ВМ. Ограничил время жизни snaphot в неделю. Сами snaphot настроил на ежедневное копирование.`
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ДИСКИ/Снимки%20дисков-new.jpg)
+
+
+![Link](https://github.com/akinya1974/DIPLOM-Fault-tolerant-infrastructure/blob/main/JPG/ДИСКИ/Расписание%20снимков%20дисков.jpg)
+
